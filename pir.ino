@@ -25,11 +25,11 @@ void loop()
     tone(8, 350);
     state = HIGH;
     delay(500);
-    Serial.println("Mouvement detecte");
+    Serial.println("Motion detected");
     digitalWrite(ledpin, LOW);
     noTone(8);
   } else {
-    Serial.println("Aucun mouvement");
+    Serial.println("No motion");
     digitalWrite(ledpin, LOW);
     digitalWrite(greenpin, HIGH);
     
